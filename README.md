@@ -1,3 +1,6 @@
+# Suggested startng point (For developers)
+- https://chatgpt.com/share/681d157c-9c58-8010-b856-121fbda51665
+
 # Prerequisites (Suggested)
 
 - **Node.js: v10**
