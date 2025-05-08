@@ -1,0 +1,6 @@
+{
+  "appId": "com.wtfelectron.wtfcapacitor",
+  "appName": "Electron Capacitor",
+  "webDir": "www",
+  "bundledWebRuntime": false
+}
