@@ -1,0 +1,93 @@
+# ────────────────────────────────────────────────────────────────────────────────
+# Node / JavaScript
+# ────────────────────────────────────────────────────────────────────────────────
+# installed npm deps
+node_modules/
+# npm error logs
+npm-debug.log*
+# if you ever use yarn
+yarn-error.log*
+
+# ────────────────────────────────────────────────────────────────────────────────
+# Build outputs & binary artifacts
+# ────────────────────────────────────────────────────────────────────────────────
+
+# generated webDir
+www/
+# if you ever use a bundler output folder
+build/
+# electron packaged apps
+dist/
+
+# Android / Capacitor
+*.apk
+*.aar
+*.dex
+
+# Electron packaging
+*.asar
+
+# Native binaries & libs
+*.exe
+*.dll
+*.bin
+*.pak
+
+# Archives & compressed
+*.gz
+*.zip
+
+# Java bytecode
+*.class
+*.jar
+
+# Source-maps & generated maps
+*.map
+
+# Misc “flat” files
+*.flat
+
+
+# ────────────────────────────────────────────────────────────────────────────────
+# Capacitor / Android
+# ────────────────────────────────────────────────────────────────────────────────
+# points to YOUR SDK install
+android/local.properties
+# Gradle cache
+android/.gradle/
+# APK / intermediates
+android/app/build/
+# wrapper JAR & properties (only if you commit it)
+android/gradle/wrapper/
+
+# ────────────────────────────────────────────────────────────────────────────────
+# Electron
+# ────────────────────────────────────────────────────────────────────────────────
+# if you use electron-builder's "out" dir
+out/
+# packaged archives
+*.asar
+
+# ────────────────────────────────────────────────────────────────────────────────
+# IDE / Editor
+# ────────────────────────────────────────────────────────────────────────────────
+# VS Code settings, launch configs
+.vscode/
+*.code-workspace
+
+# other Windows editor artifacts
+*.suo;*.ntvs*;*.njsproj
+
+# ────────────────────────────────────────────────────────────────────────────────
+# OS files
+# ────────────────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# Shortcuts
+*.lnk
+
+# ────────────────────────────────────────────────────────────────────────────────
+# Personal files
+# ────────────────────────────────────────────────────────────────────────────────
+draft.txt
