@@ -1,7 +1,7 @@
 {
   "name": "electroncapacitor",
   "version": "1.0.0",
-  "main": "src/electron/main.js",
+  "main": "src/electron/electron-main.js",
   "scripts": {
     "start": "electron .",
     
