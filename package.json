@@ -3,19 +3,13 @@
   "version": "1.0.0",
   "main": "src/electron/electron-main.js",
   "scripts": {
-    "start": "electron .",
-    
-    "pc:debug": "npm start",
-    "pc:build": "electron-builder",
-    
+    "start": "npm run build && electron .",
+    "pc:debug": "npm run build && electron .",
+    "pc:build": "npm run build && electron-builder",
     "android:build-debug": "npm run build && npx cap sync android && cd android && gradlew assembleDebug",
     "android:build": "npm run build && npx cap sync android && cd android && gradlew assembleRelease",
-    
-    "prestart": "npm run build",
-    "build": "npm run build:web",
-    "clean": "rimraf www",
-    
-    "build:web": "npm run clean && copyfiles -u 2 \"src/web/**/*\" www"
+    "build": "rimraf www && copyfiles -u 2 \"src/web/**/*\" www",
+    "clean": "rimraf www"
   },
   "build": {
     "appId": "com.wtfelectron.wtfcapacitor",
@@ -27,26 +21,31 @@
       "src/electron/**/*",
       "package.json"
     ],
-    
     "electronDownload": {
       "cache": "./.electron-cache"
     },
-    
     "forceCodeSigning": false,
     "asar": false,
     "win": {
-      "target": ["zip"],
+      "target": [
+        "zip"
+      ],
       "signAndEditExecutable": false,
       "verifyUpdateCodeSignature": false
     },
-    "linux": { "target": ["AppImage","deb"] }
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    }
   },
-  
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@capacitor-community/sqlite": "^7.0.0",
     "@capacitor/cli": "^7.2.0",
     "@capacitor/core": "^7.2.0"
   },
